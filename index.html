@@ -2,14 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ToDoリスト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoリストアプリ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>ToDoリスト</h1>
-  <input type="text" id="taskInput" placeholder="やることを入力">
-  <button onclick="addTask()">追加</button>
-  <ul id="taskList"></ul>
+  <div class="container">
+    <h1>📝 ToDoリスト</h1>
+    <p>やることを入力して、追加ボタンをクリックしてください。タスクをクリックすると削除されます。</p>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="例：牛乳を買う">
+      <button onclick="addTask()">追加</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <footer>
+    <p>作成者: <a href="https://github.com/yano-shun" target="_blank">GitHubプロフィール</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
